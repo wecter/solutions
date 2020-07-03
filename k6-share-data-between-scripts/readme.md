@@ -1,6 +1,6 @@
-#Problem:
+# Problem:
 
-##When using k6 to run performance tests, we wanted to split the script into two tests: One performing the POSTs and one performing the GETs. 
+## When using k6 to run performance tests, we wanted to split the script into two tests: One performing the POSTs and one performing the GETs. 
 
 The problem is that k6's test life-cycle doesn't allow passing data outside of the default test loop. I needed to collect the unique orderIDs
 created during the POST test script and pass those to the GET test script.
